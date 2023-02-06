@@ -8,7 +8,7 @@ public class LinkedListMain {
 
 		System.out.println("Welcome to Linked List Program");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the option: \n1. Add the data.\n2. Append the data");
+		System.out.println("Enter the option: \n1. Add the data.\n2. Append the data.\n3. Insert in between.");
 
 		switch (sc.nextInt()) {
 		case 1:
@@ -16,6 +16,9 @@ public class LinkedListMain {
 			break;
 		case 2:
 			Operations.append();
+			break;
+		case 3:
+			Operations.insertInBetween();
 			break;
 		}
 	}
