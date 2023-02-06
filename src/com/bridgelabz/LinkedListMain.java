@@ -1,11 +1,22 @@
 package com.bridgelabz;
 
+import java.util.Scanner;
+
 public class LinkedListMain {
-	
-	 public static void main(String[] args) {
 
-	        System.out.println("Welcome to Linked List Program");
-	        Operations.addDataAtStart();
-	    }
+	public static void main(String[] args) {
 
+		System.out.println("Welcome to Linked List Program");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the option: \n1. Add the data.\n2. Append the data");
+
+		switch (sc.nextInt()) {
+		case 1:
+			Operations.addDataAtStart();
+			break;
+		case 2:
+			Operations.append();
+			break;
+		}
+	}
 }
